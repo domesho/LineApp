@@ -26,6 +26,7 @@
             console.log('LIFF initialization succeeded');
             getProfile()
         }).catch((err) => {
+            console.log('LIFF initialization failed ', err);
             alert(err)
         })
 
