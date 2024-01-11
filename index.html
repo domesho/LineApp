@@ -18,11 +18,12 @@
     <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
     <script>
         const name = '名前が不明です';
-        const liffId = config.liffId;
+        const liffId = "2002739696-4P26QZB";
         liff.init({
             liffId: config.liffId, // Use own liffId
             withLoginOnExternalBrowser: true, // Enable automatic login process
         }).then(() => {
+            console.log('LIFF initialization succeeded');
             getProfile()
         }).catch((err) => {
             alert(err)
