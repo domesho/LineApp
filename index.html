@@ -20,7 +20,7 @@
         const name = '名前が不明です';
         const liffId = 'LIFFのIDです。'
         liff.init({
-            liffId: liffId, // Use own liffId
+            liffId: config.liffId, // Use own liffId
             withLoginOnExternalBrowser: true, // Enable automatic login process
         }).then(() => {
             getProfile()
