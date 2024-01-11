@@ -29,16 +29,16 @@
         })
 
         function getProfile(){
-            liff.getProfile()
-            .then((profile) => {
-                const name = profile.displayName
-                const displayName = document.getElementById('name')
-                displayName.innerHTML= name
-            })
-            .catch((err) => {
-                alert(err)
-            });
-        }
+        liff.getProfile()
+        .then((profile) => {
+            const userName = profile.displayName;  // ここを変更
+            const displayName = document.getElementById('name');
+            displayName.innerHTML = userName;  // userNameを表示
+        })
+        .catch((err) => {
+            alert(err);
+        });
+    }
 
         function sendMessage(message){
             liff
