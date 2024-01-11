@@ -11,11 +11,13 @@
 </head>
 <body>
     <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/versions/2.22.3/sdk.js"></script>
-    <h1>LIFFのテスト</h1>
+    <h1></h1>
+    <p>LIFF ID: <span id="iiiid"></span></p>
     <button id="getProfileButton">ユーザー情報を取得</button>
     <p>ユーザーID: <span id="userId"></span></p>
     <p>ユーザー名: <span id="userName"></span></p>
     <script>
+        document.getElementById('iiiid').textContent = config.liffId;
         document.getElementById('getProfileButton').addEventListener('click', function() {
     liff.init({ liffId: config.liffId }) // あなたのLIFF IDをここに設定
     .then(() => {
