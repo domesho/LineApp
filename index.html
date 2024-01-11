@@ -18,7 +18,7 @@
     <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
     <script>
         document.getElementById('getProfileButton').addEventListener('click', function() {
-    liff.init({ liffId: 'あなたのLIFF ID' }) // あなたのLIFF IDをここに設定
+    liff.init({ liffId: config.liffId }) // あなたのLIFF IDをここに設定
     .then(() => {
         if (!liff.isLoggedIn()) {
             liff.login(); // ログインしていなければログインする
