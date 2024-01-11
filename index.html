@@ -29,6 +29,7 @@
                 document.getElementById('userName').textContent = profile.displayName;
             })
             .catch(err => {
+                document.getElementById('userId').textContent = '取得できませんでした';
                 console.error('プロフィール取得エラー', err);
             });
         }
