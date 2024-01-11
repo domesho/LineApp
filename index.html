@@ -32,7 +32,7 @@
         liff.getProfile()
         .then((profile) => {
             const userName = profile.displayName;  // ここを変更
-            const displayName = document.getElementById('name');
+            const displayName = document.getElementById('userName');
             displayName.innerHTML = userName;  // userNameを表示
         })
         .catch((err) => {
