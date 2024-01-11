@@ -22,6 +22,7 @@
     .then(() => {
         if (!liff.isLoggedIn()) {
             liff.login(); // ログインしていなければログインする
+            document.getElementById('userId').textContent = 'ログインしてください';
         } else {
             liff.getProfile()
             .then(profile => {
